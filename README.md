@@ -1,29 +1,44 @@
 # 🎯 Point and Pop
 
-A webcam-based finger-tracking shooting game built with **Python**, **OpenCV**, **MediaPipe**, and **Pygame**.
-Use your **index finger** to shoot lasers at falling balls.
-
-# Point and Pop
-
 **Point and Pop** is a webcam-based finger-tracking shooting game built with **Python**, **OpenCV**, **MediaPipe**, and **Pygame**.  
-You’ll use your **index finger** to aim and shoot lasers at colorful falling balls. No mouse or keyboard required!
+Use your **index finger** to aim and shoot lasers at colorful falling balls — no mouse or keyboard required!
 
 ---
-## Gameplay Overview
+##  Gameplay Overview
 
 - Balls fall from the top of the screen.
-- Point with your **index finger** to fire lasers.
+- Point your **index finger** to fire lasers.
 - **Pop** as many balls as you can before they reach the bottom.
-- Smaller balls = more points.
-- Miss too many? It’s game over.
+- Smaller balls = higher points.
+- Lose all your lives? It’s game over.
 
+---
+## Features
+
+-  **Hand Tracking**: Real-time finger detection using MediaPipe  
+-  **Gesture-Based Shooting**: Fire by pointing your index finger  
+-  **Audio Feedback**: Background music, laser fire, and fail sounds  
+-  **Particle Effects**: Balls explode with satisfying visuals  
+-  **Progressive Difficulty**: Faster spawn rates as your score increases  
+-  **Score Tracking**: High score saved in `high_score.json`
+
+---
+## Project Structure
+- `point_and_pop/`
+  - `game.py` — Main game file  
+  - `arcadewave.wav` — Background music  
+  - `laser.wav` — Laser firing sound  
+  - `Fail_Sound.wav` — Fail/game over sound  
+  - `high_score.json` — Persistent high score file  
+  - `README.md` — This file
+    
 ---
 ## Technologies Used
 
 - `Python 3.10+`
-- `OpenCV` – Used for webcam capture and frame flipping
-- `MediaPipe` – Tracks hand landmarks to detect pointing gestures
-- `Pygame` – Renders the game visuals, plays sounds, and manages the game loop
+- `OpenCV` – Webcam capture and frame manipulation
+- `MediaPipe` – Real-time hand and finger tracking
+- `Pygame` – Graphics rendering, event handling, and audio
 
 ---
 ## How to Run the Game
